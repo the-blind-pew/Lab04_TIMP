@@ -27,7 +27,7 @@ jobs:
         run: |
          cd formatter_lib
          cmake . -DCMAKE_CXX_COMPILER=clang++
-         cmake -H -B_build
+         cmake -H. -B_build
          cmake --build _build
          cd ..
         
@@ -35,7 +35,7 @@ jobs:
         run: |
           cd formatter_ex_lib
           cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake -H -B_build
+          cmake -H. -B_build
           cmake --build _build
           cd ..
           
@@ -43,7 +43,7 @@ jobs:
         run: |
           cd hello_world_application
           cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake -H -B_build
+          cmake -H. -B_build
           cmake --build _build
           cd ..
           
@@ -51,7 +51,7 @@ jobs:
         run: |
           cd solver_lib
           cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake -H -B_build
+          cmake -H. -B_build
           cmake --build _build
           cd ..
           
@@ -59,6 +59,6 @@ jobs:
         run: |
           cd solver_application
           cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake -H -B_build
+          cmake -H. -B_build
           cmake --build _build
           cd ..    
