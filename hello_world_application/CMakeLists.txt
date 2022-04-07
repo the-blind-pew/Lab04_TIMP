@@ -7,4 +7,4 @@ add_executable(hello_world ${CMAKE_CURRENT_SOURCE_DIR}/hello_world_application/h
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/formatter_lib ${CMAKE_CURRENT_SOURCE_DIR}/formatter_ex_lib)
 find_library(formatter NAMES libformatter.a PATHS ${CMAKE_CURRENT_SOURCE_DIR}/formatter_lib)
 find_library(formatter_ex NAMES libformatter_ex.a PATHS ${CMAKE_CURRENT_SOURCE_DIR}/formatter_ex_lib)
-target_link_libraries(hello_world ${CMAKE_CURRENT_SOURCE_DIR}/formatter_lib/_build/libformatter.a ${CMAKE_CURRENT_SOURCE_DIR}/formatter_ex_lib/_build/libformatter_ex.a)
+target_link_libraries(hello_world formatter_ex)
