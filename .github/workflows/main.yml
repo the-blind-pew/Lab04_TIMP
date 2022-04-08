@@ -70,36 +70,36 @@ jobs:
       - name: Building of forrmater_lib
         run: |
          cd formatter_lib
-         cmake . -DCMAKE_CXX_COMPILER=clang++
-         cmake --build .
+         cmake formatter_lib 
+         cmake --build formatter_lib
          cd ..
         
       - name: Building of forrmater_ex_lib
         run: |
           cd formatter_ex_lib
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+          cmake formatter_ex 
+          cmake --build fofmatter
           cd ..
           
       - name: Building of hello_world_application
         run: |
           cd hello_world_application
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+          cmake hello_world_application
+          cmake --build hello_world_application
           cd ..
           
       - name: Building of solver_lib
         run: |
           cd solver_lib
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+          cmake solver_lib 
+          cmake --build solver_lib
           cd ..
           
       - name: Building of solver_application
         run: |
           cd solver_application
-          cmake . -DCMAKE_CXX_COMPILER=clang++
-          cmake --build .
+          cmake solver_application
+          cmake --build solver_application
           cd ..
 
 
