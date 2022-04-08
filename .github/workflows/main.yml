@@ -64,8 +64,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: prepairing
-        run: sudo apt install cmake g++ clang-11
+      #- name: prepairing
+      #  run: sudo apt install cmake g++ clang-11
       
       - name: Building of forrmater_lib
         run: |
